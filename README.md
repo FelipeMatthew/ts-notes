@@ -37,6 +37,8 @@ mexer no lib
 outDir "./dist" - vai converter todo ts para js
 strict = true = vai mostrar o erro durante o codigo.
 
+LIB : [ESNEXT, DOM]
+
 "include": [
     "./src"
 ]
