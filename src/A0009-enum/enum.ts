@@ -14,7 +14,7 @@ enum Colors {
 }
 
 function chooseColor(cor: Colors): void {
-  console.log(Colors[cor]);
+  console.log('');
 }
 
 chooseColor(Colors.pink);

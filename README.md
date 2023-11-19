@@ -70,3 +70,13 @@ quando colocar :? é um atributo opcional
 Index signature = é quando você cria um objeto e necessita que ele seja atribuido novos valores externamente, deixando o mesmo como valor desconhecido.
 
 readonly = não pode mais alterar o valor da chave
+
+### Webpack config
+
+npm i ts-loader webpack webpack-cli --save-dev
+
+quando for trabalhar c back end vai salvar no backend e o front estará em outro bundle.
+
+para rodar se utiliza npx webpack -w
+
+WINREF - apaga tudo que tem na pasta dist e sobe ela novamente 
