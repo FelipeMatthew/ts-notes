@@ -69,4 +69,4 @@ exports["default"] = () => {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=bundle-frontend.js.map
