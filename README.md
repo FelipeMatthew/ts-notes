@@ -79,4 +79,10 @@ quando for trabalhar c back end vai salvar no backend e o front estará em outro
 
 para rodar se utiliza npx webpack -w
 
-WINREF - apaga tudo que tem na pasta dist e sobe ela novamente 
+WINREF - apaga tudo que tem na pasta dist e sobe ela novamente
+
+Caso queira instalar algo em typescript você pode utilizar a configuração -
+
+npm i @types/xx -D
+
+npm i @types/validator -D

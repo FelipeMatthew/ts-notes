@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/A0018-webpack/index.ts',
+  entry: './src/A0019-exercise/forms.ts',
   module: {
     rules: [
       {
@@ -19,7 +19,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle-frontend.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'frontend', 'assets', 'js'),
   },
   devtool: 'source-map',
