@@ -10,20 +10,25 @@ const password2 = document.querySelector('.password2') as HTMLInputElement;
 
 const allInputs = [username, email, password, password2] as HTMLInputElement[];
 
-form.addEventListener('submit', function (event: Event) {
+const submitEventListener = (event: Event) => {
   event.preventDefault();
 
+  // target. Uma referência ao objeto que enviou o evento.
+  const target = event.target as HTMLFormElement;
+
   // Methods
-  hideErrorMessaages(this);
+  hideErrorMessaages(target);
   checkFormEmptyFields(allInputs);
   checkEmail(email);
   checkEqualPasswords(password, password2);
 
-  if (shouldSendForm(this)) {
+  if (shouldSendForm(target)) {
     form.submit();
     alert('Formulário enviado com sucesso');
   }
-});
+};
+
+form.addEventListener('submit', submitEventListener);
 
 function checkEqualPasswords(
   password: HTMLInputElement,
