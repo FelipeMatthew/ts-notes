@@ -86,3 +86,5 @@ Caso queira instalar algo em typescript você pode utilizar a configuração -
 npm i @types/xx -D
 
 npm i @types/validator -D
+
+Para liberar um atributo privado se utiliza um método publico ao qual você pode colocar regra de negócio no mesmo
