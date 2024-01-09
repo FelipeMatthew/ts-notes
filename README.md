@@ -88,3 +88,16 @@ npm i @types/xx -D
 npm i @types/validator -D
 
 Para liberar um atributo privado se utiliza um método publico ao qual você pode colocar regra de negócio no mesmo
+
+
+## Agregação - composição - associação
+
+associação = a classe ela tem uma relação com outra e ambas se comunicam.
+
+agregação = classe com dependencia mais forte que é necessário da outra para que ela tenha seus componentes.
+carro precisa da roda para rodar
+
+composição = um objeto tem componentes de outro objeto - totalmente dependente.
+carro precisa de um motor para rodar, nesse caso o motor é um objeto totalmente necessário de estar presente na classe do carro.
+Relação entre ser humano e coração é uma relação muito mais forte e uma depende totalmente da outra.
+Uma classe vai fazer parte da outra classe. 
