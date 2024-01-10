@@ -99,6 +99,7 @@ carro precisa da roda para rodar
 
 composição = um objeto tem componentes de outro objeto - totalmente dependente.
 carro precisa de um motor para rodar, nesse caso o motor é um objeto totalmente necessário de estar presente na classe do carro.
+
 Relação entre ser humano e coração é uma relação muito mais forte e uma depende totalmente da outra.
 Uma classe vai fazer parte da outra classe.
 
