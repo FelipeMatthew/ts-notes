@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/A0022-Class/class.ts',
+  entry: './src/A0019-exercise/forms.ts',
   module: {
     rules: [
       {

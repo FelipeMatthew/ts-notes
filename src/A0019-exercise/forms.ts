@@ -1,2 +1,2 @@
-import fromController from './formController';
-fromController();
+//import './formController';
+import '../A0037-media-player/index.ts';
