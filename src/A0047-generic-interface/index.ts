@@ -4,7 +4,7 @@ interface PersonProtocol<T, U> {
   age: U;
 }
 
-const student: PersonProtocol<string, number> = {
+export const student: PersonProtocol<string, number> = {
   name: 'John',
   lastName: 'Doe',
   age: 23,
