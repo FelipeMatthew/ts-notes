@@ -1,9 +1,11 @@
 // Caso queira passar um parametro para um decorador, voce terá que instanciar ele em uma
 // functions que vai retornar a function decoradora, assim na function pai terá os parametros do decorator
-
-function decoratorFactory(params: string, params2: string) {
+interface Constructor {
+  new (...args: any[]): any;
+}
+function decorator01(params: string, params2: string) {
   // Closure
-  return function <T extends new (...args: any[]) => any>(target: T): T {
+  return function <T extends Constructor>(target: T): T {
     console.log('im decorator')
 
     return class extends target {
@@ -23,8 +25,19 @@ function decoratorFactory(params: string, params2: string) {
   }
 }
 
+function decorator02(params: string[]) {
+  return function (target: Constructor): Constructor {
+    return class extends target {
+      constructor(...args: any[]) {
+        super(...args)
+        console.log('im the second decorator')
+      }
+    }
+  }
+}
 
-@decoratorFactory( 'red', 'John Doe')
+@decorator01( 'red', 'John Doe')
+@decorator02(['', '' ])
 export class Animal2 {
   constructor(
     public color: string,
