@@ -1,13 +1,29 @@
 // SERVE APENAS PARA ASSISTIR O PARAMETRO
-function decoratorParams(classPrototype: any, methodName: string, index: number) {
-  console.log(classPrototype)
-  console.log(methodName)
-  console.log(index)
+function decoratorProps(classPrototype: any, methodName: string | symbol, ): any {
+  let propsValue: any;
+
+  return {
+    get: () => propsValue,
+    set: (value: any) => {
+      if(typeof value === 'string') {
+        propsValue = value.split('').reverse().join('');
+        return
+      }
+      propsValue = value;
+    }
+
+  }
+
 }
 
 export class Person {
+  @decoratorProps
   name: string;
+
+  @decoratorProps
   lastName: string;
+
+  @decoratorProps
   age: number
 
   constructor(name: string, lastName: string, age: number) {
@@ -16,7 +32,7 @@ export class Person {
     this.age = age
   }
 
-  method(@decoratorParams msg: string): string {
+  method(msg: string): string {
     return `${this.name} ${this.lastName}: ${msg}`
   }
 
